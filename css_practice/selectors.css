@@ -1,0 +1,23 @@
+*{    /*this is universal selector*/
+    background-color: aqua;
+}
+
+
+h1{   /* this is a tag selector*/
+    color: red;
+}
+p{
+    color: blue;
+}
+
+.heading   /* this is a class selector*/
+{
+    color: yellow;
+}
+
+#middle{    /*this is id selector*/
+color: rgb(5, 236, 109);
+font-size: xx-large;
+font-style: oblique;
+}
+
