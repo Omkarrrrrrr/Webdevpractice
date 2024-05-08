@@ -1,0 +1,16 @@
+h1{
+    color: red;
+}
+
+p{
+    color: rgb(154, 154, 169);
+}
+h2{
+    color: rgba(150,280, 110,0.45);
+}
+p2{
+    color: hsl(0, 100%, 50%);
+}
+
+
+/* we can provide HEX code also/
