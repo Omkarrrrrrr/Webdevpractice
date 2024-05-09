@@ -1,0 +1,13 @@
+h1{
+    color: red;
+    text-decoration: underline;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+
+}
+p{
+    line-height: 20px;
+    word-spacing: 15px;
+    text-indent: 50px;
+}
