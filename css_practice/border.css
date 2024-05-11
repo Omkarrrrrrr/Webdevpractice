@@ -9,7 +9,8 @@ html{
     padding: 10px;
     margin-bottom: 5px;
     width: 400px;
-    height: 40px;
+    min-height: 40px;
+    max-height: 500px;   /*same we can set for width also*/
     box-sizing: border-box;
 }
 
