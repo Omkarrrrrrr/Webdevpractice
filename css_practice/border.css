@@ -1,0 +1,32 @@
+html{
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+#div1 {
+    border: solid red 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 400px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+#div2 {
+    border: solid blue 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 400px;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+#div3 {
+    border: solid green 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 200px;
+    height: 40px;   /*this will inherit the box sizing of its parent block*/
+    
+}
