@@ -1,0 +1,49 @@
+/* Set the box-sizing for all elements to border-box */
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+
+/* Remove default margin and padding from the body */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for light sections */
+.section-light {
+    background-color: aliceblue;
+    color: black;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+/* Styling for dark sections */
+.section-dark {
+    background-color: #282e34;
+    color: white;
+    padding: 20px; /* Add padding for better spacing */
+}
+.image{
+    background-attachment: fixed;   /*this prop is adding parallax*/
+    background-size: cover;
+}
+
+/* Styling for the image section */
+.first-image {
+    background-image: url(images/1.jpeg);
+    min-height: 500px;
+    opacity: 0.8;
+}
+.second-image {
+    background-image: url(images/2.jpeg);
+    min-height: 500px;
+    
+}
+.third-image {
+    background-image: url(images/3.jpeg);
+    min-height: 500px;
+   
+}
+
