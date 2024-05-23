@@ -46,4 +46,14 @@ body {
     min-height: 500px;
    
 }
-
+.text-content{
+    position: relative;
+    top: 200px;
+    left: 600px;
+    font-size: xx-large;
+    text-transform: uppercase;
+    background-color: azure;
+    padding: 20px;
+    width: 20%;
+    opacity: 0.8;
+}
