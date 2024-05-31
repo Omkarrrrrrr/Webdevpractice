@@ -1,3 +1,19 @@
+html{
+    box-sizing: border-box;
+}
+* {
+box-sizing: inherit;
+}
+
+button{
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f7f7f7;
+    font-size: 1.5em;
+    outline: none;
+    width: 70px;
+}
+
 .Calculator{
     display: flex;
     flex-direction: column;
@@ -6,16 +22,19 @@
 .Calculator-keys{
     width: 100px;
     display: flex;   /*default direction row*/
-    flex-wrap: wrap;
-    justify-content: space-between;
+   flex-direction: column;
 }
-button{
-    border: 1px solid #ccc;
-    padding: 20px;
-    background-color: #f7f7f7;
-    font-size: 1.5em;
-    outline: none;
 
+.key-row-1,.key-row-2,.key-row-3{
+    width: 100%;
+}
+
+.key-row-1{
+    display: flex;
+    
+}
+.key-row-3{
+    display: flex;
 }
 .key-function{
     background-color: #e8e6e3;
