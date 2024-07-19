@@ -75,3 +75,22 @@ li > .navlink{
 h1 ~ span{
     color: blue;
 }
+#sample::after{
+    content: "After content";
+}
+/* #sample ::before{
+    content: "Before content";
+} */
+
+#sample::first-line{
+    text-decoration: underline;
+    background-color: yellow;
+}
+
+#sample::first-letter{
+    background-color: blue;
+    font-size: xx-large;
+}
+input::placeholder{
+    background-color: yellow;
+}
