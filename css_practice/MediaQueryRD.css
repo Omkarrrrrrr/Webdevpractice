@@ -39,3 +39,15 @@ span{
     }
    
 }
+
+h1,h2,.navlink, #custom{
+    color: red;
+}
+
+nav span{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+li > span{
+        /*it will pick immidiate span child present in the li*/
+        text-decoration: underline;
+}
