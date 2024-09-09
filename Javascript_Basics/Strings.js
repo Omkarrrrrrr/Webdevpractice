@@ -12,6 +12,10 @@ console.log(singleQuoted,doubleQuoted,backTicked);
 
 // Backticked is used for multiline strings
 
-console.log(`this is
+let multilinestring = (`this is
     multiline 
     string`)
+    console.log(multilinestring);
+
+
+    console.log(typeof(multilinestring));
