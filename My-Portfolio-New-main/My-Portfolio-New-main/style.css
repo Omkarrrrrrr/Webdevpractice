@@ -1,0 +1,867 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, Arial, sans-serif;
+}
+
+#navbar {
+  position: sticky;
+  top: 0;
+  overflow:visible;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 10px 0px;
+  color: white;
+  background-color: black;
+}
+
+.navbar-list {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+  padding-left: 50px;
+}
+
+.web-logo {
+  font-size: 1.5rem;
+  margin-right: 50px;
+  padding: 10px 0px;
+  font-weight: 900;
+}
+
+.list {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+ul a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul a:hover {
+  animation: border-dash 1s ease alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes border-dash {
+  0% {
+    border-radius: 1px;
+    border-bottom: 3px solid rgb(255, 255, 255);
+  }
+  50% {
+    border-radius: 2px;
+    border-bottom: 3px solid rgb(247, 210, 131);
+  }
+  100% {
+    border-radius: 3px;
+    border-bottom: 3px solid rgb(255, 194, 15);
+  }
+}
+
+/* Home Section */
+#home,
+#about {
+  padding: 50px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: black;
+  color: white;
+}
+
+.home-left {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  color: white;
+}
+
+.name {
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.hidden-img{
+  display: none;
+}
+
+.buttons {
+  width: 600px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 15px;
+  border-radius: 25px;
+  color: black;
+  letter-spacing: 3px;
+}
+
+.linkedin {
+  color: black;
+  letter-spacing: 3px;
+  background-color: rgb(255, 194, 15);
+}
+
+.github {
+  border: 1px solid white;
+  color: white;
+}
+
+.hello,
+span {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: 600;
+  color: rgb(255, 194, 15);
+  letter-spacing: 3px;
+}
+
+.myphoto {
+  border-radius: 45%;
+}
+
+/* About Me Section */
+
+.about-left {
+  margin-right: 25px;
+}
+
+.about-left > .myphoto {
+  margin-right: 50px;
+}
+
+.about-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 0.5rem;
+}
+.about-bg {
+  position: absolute;
+  font-size: 120px;
+  font-weight: bolder;
+  opacity: 0.1;
+  bottom: 300px;
+  right: 135px;
+}
+
+.about-head {
+  font-size: 50px;
+  padding-right: 180px;
+}
+
+.about-info {
+  width: 430px;
+  color: rgb(153, 153, 153);
+}
+
+.basics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin-top: 3rem;
+}
+.my-info {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.project-no {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding-right: 220px;
+  margin: 20px 0px;
+}
+
+.project-no > a.btn {
+  margin-right: 50px;
+}
+
+.info-list-ans {
+  color: rgb(153, 153, 153);
+}
+
+/* Resume Section */
+
+#resume,
+#skill-section,
+#project,
+#freelance,
+#contact,
+footer {
+  padding: 50px 10px;
+  background-color: black;
+  color: white;
+  /* width: 100vw; */
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.resume-bg {
+  position: absolute;
+  font-size: 120px;
+  font-weight: bolder;
+  opacity: 0.1;
+  top: 10px;
+}
+
+.resume-head {
+  font-size: 50px;
+}
+
+.resume-info {
+  width: 850px;
+  text-align: center;
+  color: rgb(153, 153, 153);
+  padding: 3px;
+  margin-top: 10px;
+}
+
+.education {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.degree {
+  padding: 30px;
+  width: 450px;
+  display: flex;
+  /* border: 2px solid white; */
+  border-radius: 5px;
+  background-color: rgb(26, 26, 26);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.degree-year {
+  font-size: 26px;
+  font-weight: 900;
+  color: rgb(255, 194, 15);
+}
+
+.degree-name {
+  padding: 10px 0px;
+}
+
+.university {
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+}
+
+.degree-info {
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+}
+
+.cv {
+  color: black;
+  text-decoration: none;
+  padding: 20px 25px;
+  border-radius: 25px;
+  letter-spacing: 3px;
+  background-color: rgb(255, 194, 15);
+}
+
+/* Skills Section */
+.my-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.skills-div {
+  margin: 5px;
+}
+
+.skill-bg {
+  top: 0;
+}
+
+.skills-list {
+  position: relative;
+  list-style: none;
+}
+
+.skills-list span {
+  position: absolute;
+  color: rgb(153, 153, 153);
+  top: 0;
+  right: 75px;
+}
+.skills h3 {
+  letter-spacing: 3px;
+}
+
+.progress {
+  width: 500px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: rgb(26, 26, 26);
+  margin: 5px 0;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 8px;
+  border-radius: 5px;
+
+  background-color: rgb(255, 194, 15);
+}
+
+/* Project Sections */
+.projects {
+  display: grid;
+  width: 1050px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.project-div {
+  background-color: rgb(26, 26, 26);
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border-radius: 5px;
+  background-color: rgb(26, 26, 26);
+  padding: 10px;
+}
+
+.project-div-first {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.project-div-second {
+  grid-area: 1 / 2 / 2 / 4;
+}
+.project-div-third {
+  grid-area: 2 / 1 / 3 / 3;
+}
+.project-div-fourth {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.project-div-fifth {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.project-div-sixth {
+  grid-area: 3 / 2 / 4 / 4;
+}
+
+.project-name {
+  font-size: 26px;
+  font-weight: 900;
+  color: rgb(255, 194, 15);
+}
+
+.project-stack {
+  padding: 10px 0px;
+}
+
+.project-bg {
+  top: -15px;
+}
+
+.project-info {
+  color: rgb(153, 153, 153);
+}
+
+/* Freelance CSS */
+
+#project {
+  padding-bottom: 120px;
+}
+#freelance {
+  background: url("./assets/bg_image.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.freelance-info {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.info {
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.info-p {
+  width: 650px;
+  color: rgb(153, 153, 153);
+}
+
+/* Contact CSS */
+#contact {
+  padding-top: 40px;
+}
+.contact-info {
+  width: 650px;
+}
+.container {
+  padding-top: 30px;
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+  padding: 50px 0;
+}
+.contact-div {
+  height: 200px;
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgb(26, 26, 26);
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-paper-plane {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+/* Footer Section */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(153, 153, 153);
+}
+
+
+/* Responsive Website */
+
+/* For Laptops  */
+
+@media screen and (min-device-width: 787px) 
+    and (max-device-width: 1074px) and (-webkit-min-device-pixel-ratio: 2.0){
+
+/* Nabar Section */
+      .web-logo{
+        margin-left: 50px;
+        margin-right: 0;
+
+      }
+      .navbar-list{
+        margin-right: 50px;
+      }
+
+    /* Home Section */
+  #home{
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .home-left{
+    width: 450px;
+    justify-content: center;
+  }
+  .home-right{
+    width: 400px;
+  }
+
+  .myphoto{
+    display: flex;
+    width: 420px;
+    height: 420px;
+    opacity: 1;
+  }
+
+  .hidden-img{
+    display: none;
+  }
+
+  /* About Section */
+  #about{
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .about-left{
+    width: 450px;
+  }
+  .about-right{
+    width: 450px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .basics{
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  /* Resume Section */
+  .degree{
+    width: 380px;
+  }
+
+  /* Skills Section */
+  .progress{
+    width: 400px;;
+  }
+
+  /* Project Section */
+  .projects{
+    gap: 3rem;
+    width: 850px;
+  }
+
+  /* Contact Section */
+  .contacts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+}
+
+/* For Mobile */
+
+@media screen and (max-device-width: 786px) {
+
+
+  /* Home Section */
+
+  #home{
+    /* padding-right:0px ; */
+    justify-content: flex-start;
+    /* align-items: center; */
+  }
+  .home-left {
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 65px;
+  }
+  .name{
+    font-size: 160px;
+    font-weight: 800;
+    z-index: 1;
+  }
+
+  .hello{
+    font-size: 35px;
+    font-family: Poppins, Arial, sans-serif;
+    font-weight: 600;
+    color: rgb(255, 194, 15);
+    letter-spacing: 3px;
+  }
+
+  .role{
+    font-size: 45px;
+    padding-bottom: 20px;
+    z-index: 1;
+  }
+
+  .buttons{
+    z-index: 1;
+  }
+
+  .btn{
+    padding: 20px 35px;
+    border-radius: 35px;
+    margin: 15px;
+    z-index: 1;
+  }
+
+  .github{
+    padding: 25px 49px;
+    border-radius: 35px;
+    margin: 8px;
+    font-size: 28px;
+  }
+
+  .myphoto{
+    display: none;
+  }
+
+  .hidden-img{
+    display: flex;
+    height: 900px;
+    opacity: 0.4;
+    position: absolute;
+    /* top: 90px; */
+    left: 70px;
+  }
+
+  /* About section */
+
+  #about{
+    padding-top:100px;
+  }
+  .about-bg{
+    /* text-align: center; */
+    top: 0px;
+    right: 150px;
+    font-size: 170px;
+  }
+
+  .about-head{
+    font-size: 100px;
+    /* padding-right: 180px; */
+
+  }
+
+  .about-info{
+    font-size: 38px;
+    width: 700px;
+
+  }
+
+  .about-bg{
+    font-size: 140px;
+  }
+
+  .my-info{
+    grid-template-columns: auto auto;
+    gap: 0.2rem;
+    font-size: 30px;
+    /* text-wrap: wrap; */
+  }
+
+  .linkedin{
+    font-size: 35px;
+  }
+
+  .info-list{
+    width: 350px;
+  }
+
+  .project-no {
+    font-size: 35px;
+    margin: 30px 0px;
+  }
+
+  /* Resume Section */
+
+
+  .resume-bg{
+    font-size: 170px;
+
+  }
+  .resume-head{
+    font-size: 100px;
+  }
+  .resume-info{
+    font-size: 35px;
+    width: 700px;
+  }
+  .education{
+    /* width: 700px; */
+    grid-template-columns: auto;
+  margin: 3rem 0;
+  }
+
+  .degree{
+    width: 700px;
+    border-radius: 10px;
+  }
+
+  .degree-year, .project-name{
+    width: 100%;
+    font-size: 40px;
+  }
+  .degree-name, .project-stack{
+    width: 100%;
+    font-size: 35px;
+  }
+
+  .education>.cv{
+    padding: 20px 35px;
+    border-radius: 35px;
+    width: 210px;
+    font-size: 26px;
+  }
+
+  .university{
+    font-size: 22px;
+  }
+
+  .degree-info,.project-info{
+    font-size: 22px;
+  }
+
+  .cv.btn{
+        text-align: center;
+    width: 200px;
+    font-size: 22px;
+  }
+
+
+  /* Skills Section */
+
+  .my-skills{
+  grid-template-columns:auto;
+  }
+
+  .progress{
+    width: 800px;
+    height: 10px;
+  }
+
+  .skills>h3{
+    font-size: 12px;
+  }
+
+  .skills>span{
+    font-size: 24px;
+
+  }
+
+  .progress-bar{
+    width: 80%;
+    height: 10px;
+
+  }
+
+  /* Projects Section */
+
+  .projects {
+    grid-template-columns: auto;
+    width: 800px;
+    border-radius: 15px;
+  }
+
+  .project-info{
+    font-size: 30px;
+  }
+  .project-div{
+    padding-left: 20px;
+  }
+
+  .project-div-first {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .project-div-second {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .project-div-third {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .project-div-fourth {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  .project-div-fifth {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+  .project-div-sixth {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+
+  /* Freelancing Section */
+
+  #freelance{
+    background: url("./assets/bg_image-mobile.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .freelance-info>.linkedin{
+    width: 200px;
+  }
+  .info{
+    font-size: 80px;
+  }
+
+  .info-p{
+    font-size: 35px;
+  }
+
+  /* Contact Section */
+  .contacts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .contact-div{
+    width: 350px;
+    margin: 20px 0;
+    padding-bottom: 45px;
+  }
+
+  .contact-div>h3{
+    font-size: 35px;
+  }
+  .contact-div>p{
+    font-size: 25px;
+    color: rgb(153, 153, 153);
+  }
+
+  .icon{
+    width: 150px;
+    height: 300px; 
+    border-radius: 50%;
+  }
+
+  .icon-paper-plane {
+    padding: 20px;
+    font-size: 75px;
+    font-weight: bolder;
+  }
+
+  /* Footer */
+  footer>p{
+    font-size: 26px;
+    text-align: center;
+  }
+}

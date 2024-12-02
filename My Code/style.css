@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 3rem;
+    border: 2px solid rgb(121, 118, 118);
+    /* height: 100%;
+    width: 100%; */
+    padding: 20px;
+    margin: 10px;
+}
+
+.left{
+    /* border: 2px solid green; */
+    height:100%;
+    width: 300px;
+}
+
+.right{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 450px;
+    padding-right: 10px;
+
+}
+
+/* Left CSS */
+
+.left-info{
+    font-size: 26px;
+}
+/* Card1 CSS */
+.card1{
+    background-color: #5271ff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 260px;
+    /* width: 300px; */
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 3px 0 0 0;
+    padding: 0;
+}
+
+.links{
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.logo{
+    margin-right: 5px;
+    height: 15px;
+}
+
+.avtar{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.your-name{
+    color: white;
+    margin: 5px;
+}
+
+.title{
+    color: white;
+    margin: 0 0 3px 0px;
+}
+
+/* Card2 CSS */
+
+/* Contact */
+.card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid blue; */
+    /* height: 100%;
+    width: 300px; */
+    background-color: #3c4240;
+}
+
+.contact{
+    /* border: 2px solid white; */
+    height: 200px;
+    /* width: 244px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.contact-info{
+    margin: 10px 0;
+    border-bottom: 3px solid white;
+    width: 200px;
+}
+
+.phone{
+    margin: 5px 0px;
+}
+.phone1{
+    color: #b4b8b6;
+}
+
+/* Skills */
+
+.skills{
+    height: 100%;
+    color: white;
+    /* margin-top: 15px; */
+}
+.progress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill{
+    list-style: none;
+    color: white;
+    margin: 3px;
+}
+
+.file{
+    width: 180px;
+    height: 10px;
+}
+
+/* Certificates */
+
+.certificate{
+    margin: 15px 0px;
+    color: white;
+}
+
+.big{
+    height: 25px;
+}
+
+.certs{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* .list-cert{
+    margin-bottom: 30px;
+} */
+
+.li-cert{
+    color: white;
+    list-style: none;
+    text-align: left;
+    margin: 15px 0px 10px 9px;
+    /* font-size: 20px; */
+    /* width: 200px; */
+}
+
+/* Right Card CSS */
+
+/* Objective CSS */
+.objective{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    margin-bottom: 15px;
+    /* width: 430px; */
+
+}
+
+.right-heads{
+    border-bottom: 2px solid black;
+    color: #5271ff;
+    margin-bottom: 15px;
+}
+
+/* Experience CSS */
+.experience{
+    /* margin: 0 0 0 15px; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    /* text-align: left; */
+    margin-bottom: 15px;
+}
+
+.exp-info{
+    /* margin: 15px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.right-heads{
+    font-size: 24px;
+}
+
+.right-info{
+    padding-left: 40px;
+    margin: 3px 0px;
+    /* font-size: 14px; */
+}
+.role{
+    margin-right: 195px;
+    /* margin-bottom: 2px; */
+}
+.company{
+    padding-left: 40px;
+    margin: 3px 0px;
+}
+
+/* Project CSS */
+.proj-info{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-left: 8px;
+}
+
+.project{
+    margin-bottom: 15px;
+}
