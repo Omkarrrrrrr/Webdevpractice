@@ -1,0 +1,15 @@
+h1{
+    background-color: black;
+    color:antiquewhite;
+}
+p{
+    background-color: azure;
+    color: black;
+    text-decoration: solid;
+}
+button{
+    background-color: dodger
+}
+body{
+    background-color: cadetblue;
+}
