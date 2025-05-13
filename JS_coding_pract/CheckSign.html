@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Checker</title>
+    <script>
+      function check() {
+        var value = document.getElementById("data").value; // Get input value
+        var res = Math.sign(value); 
+        var resultText;
+
+        // Use `res` to set appropriate result
+        if (res > 0) {
+          resultText = "Positive Number";
+        } else if (res < 0) {
+          resultText = "Negative Number";
+        } else if (res === 0) {
+          resultText = "Zero";
+        } else {
+          resultText = "Invalid Input";
+        }
+
+        // Update the <h1> element with the result
+        document.getElementById("res").innerText = resultText;
+      }
+    </script>
+  </head>
+  <body>
+    <input type="number" id="data" placeholder="Enter number here" />
+    <br />
+    <button onclick="check()">CHECK</button>
+    <h1 id="res">Result will appear here</h1>
+  </body>
+</html>

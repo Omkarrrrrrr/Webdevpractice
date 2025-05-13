@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function convert(){
+            var c = document.getElementById("data").value;
+            var f = (c * 1.8) + 32;
+            document.getElementById(`res`).innerText = "Fahrenheit" + f;
+        }
+
+    </script>
+</head>
+<body>
+  <input type="number" id="data" placeholder="Enter temp in celcius"> celsius
+  <button onclick="convert()">Convert</button> Farhenheit
+  <h1 id="res"></h1>
+</body>
+</html>
