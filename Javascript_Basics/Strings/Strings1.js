@@ -4,7 +4,7 @@ let a = "I am omkar";
 
 let b = 'learning sw development';
 
-let c = `and web development`
+let c = `and web development`;
 
 console.log(a,b,c);
 
@@ -14,3 +14,6 @@ let x = 15;
 
 let s = `value of x is ${x}`;
 console.log(s);
+
+
+console.log(typeof(x));
