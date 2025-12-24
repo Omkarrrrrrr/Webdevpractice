@@ -1,3 +1,13 @@
+:root{
+    --body-background: #f4f4f9;
+    --btn-preimary: #5cabff;
+    --btn-secondary:#f8e068;
+    --btn-active:#4a90e2;
+    --btn-edit: #ffd700;
+    --btn-delete:#ff6347;
+    --btn-complete:#32cd32;
+
+}
 *{
   box-sizing: border-box;
 }
@@ -48,4 +58,38 @@ li:hover{
 
 li:last-child{
     border-bottom: none;
+}
+.filterbutton, .editBtn,.deleteBtn,.completedBtn{
+    margin: 5px;
+    padding: 10px,15px;
+    background-color: var(--btn-secondary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: brackground-color 0.3s;
+}
+
+.editBtn{
+    background-color:var(--btn-edit) ;
+}
+.deleteBtn{
+    background-color:var(--btn-delete) ;
+}
+.completedBtn{
+    background-color:var(--btn-complete) ;
+}
+
+.filterbutton:hover{
+    background-color: var(--btn-active);
+}
+
+.todoItem{
+    letter-spacing: 1px;
+}
+.todoItem{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
 }
