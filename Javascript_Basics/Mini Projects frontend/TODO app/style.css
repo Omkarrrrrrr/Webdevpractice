@@ -1,95 +1,118 @@
-:root{
-    --body-background: #f4f4f9;
-    --btn-preimary: #5cabff;
-    --btn-secondary:#f8e068;
-    --btn-active:#4a90e2;
-    --btn-edit: #ffd700;
-    --btn-delete:#ff6347;
-    --btn-complete:#32cd32;
+:root {
+    --bg: #f2f5f9;
+    --card: #ffffff;
+    --primary: #4a6cf7;
+    --success: #2ecc71;
+    --danger: #e74c3c;
+    --text: #2c3e50;
+    --muted: #95a5a6;
+}
 
+* {
+    box-sizing: border-box;
 }
-*{
-  box-sizing: border-box;
-}
-body{
+
+body {
     margin: 0;
-    padding: 0;
-    background-color:#f4f4f9;
+    font-family: "Segoe UI", sans-serif;
+    background: var(--bg);
 }
-.container{
-    background-color: white;
-    max-width: 600px;
-    margin: 0 auto;
-    box-shadow: 0 0 10px rgba(0,0,0,1);
-    padding: 20px;
+
+.app {
+    max-width: 500px;
+    margin: 60px auto;
+    background: var(--card);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
 h1 {
-     text-align: center;   
+    text-align: center;
+    color: var(--text);
 }
 
-#todoinput{
-    width: 75%;
-    padding: 10px;
-    margin-right: 10px;
-    border: 2px solid #ddd;
-    border-radius: 2px;
+.input-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-#addtodo{
-    padding: 10px 20px;
-    background-color: aqua;
+#todoInput {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+#addtodo {
+    background: var(--primary);
+    color: white;
     border: none;
-    border-radius: 15px rgb(175, 26, 26);
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-ul{
-    list-style-type: none;
+#addtodo:hover {
+    opacity: 0.9;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.filterbutton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #ecf0f1;
+}
+
+.filterbutton.active {
+    background: var(--primary);
+    color: white;
+}
+
+ul {
+    list-style: none;
     padding: 0;
 }
 
-li{
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-li:hover{
-    background-color: aqua;
-}
-
-li:last-child{
-    border-bottom: none;
-}
-.filterbutton, .editBtn,.deleteBtn,.completedBtn{
-    margin: 5px;
-    padding: 10px,15px;
-    background-color: var(--btn-secondary);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: brackground-color 0.3s;
-}
-
-.editBtn{
-    background-color:var(--btn-edit) ;
-}
-.deleteBtn{
-    background-color:var(--btn-delete) ;
-}
-.completedBtn{
-    background-color:var(--btn-complete) ;
-}
-
-.filterbutton:hover{
-    background-color: var(--btn-active);
-}
-
-.todoItem{
-    letter-spacing: 1px;
-}
-.todoItem{
+.todoItem {
     display: flex;
-    flex-direction: row;
-    margin-left: auto;
     justify-content: space-between;
     align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: #f9fafb;
+}
+
+.todoItem.completed .text {
+    text-decoration: line-through;
+    color: var(--muted);
+}
+
+.todoButtons button {
+    border: none;
+    padding: 6px 10px;
+    margin-left: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.completeBtn {
+    background: var(--success);
+    color: white;
+}
+
+.deleteBtn {
+    background: var(--danger);
+    color: white;
 }
